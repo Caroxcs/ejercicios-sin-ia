@@ -1,0 +1,46 @@
+Algoritmo Becas ()
+	Inicio
+		Definir promedio Como Real
+		Definir estudiante Como Caracter
+		Definir num_materias Como Entero
+		
+		Escribir "Ingrese el promedio"
+		Leer promedio
+		Escribir "Ingrese el número de materias reprobadas"
+		Leer num_materias
+		Escribir "¿Es de primer ciclo? (S/N)"
+		Leer estudiante
+		
+		Mientras estudiante = "S" Hacer
+			Si promedio >= 9.0 Y num_materias = 0 Entonces
+				Escribir "Beca de 100%, aprobada"
+			SiNo
+				Si promedio >= 8.0 Y num_materias <= 1 Entonces
+					Escribir "Beca de 70%, aprobada"
+				SiNo
+					Si promedio >= 7.0 Y num_materias <= 2 Entonces
+						Escribir "Beca de 40%, aprobada"
+					SiNo
+						Escribir "Beca rechazada"
+					FinSi
+				FinSi
+			FinSi
+			Escribir "¿Desea evaluar otro estudiante? (S/N)"
+			Leer estudiante
+		Fin Mientras
+	Fin Algoritmo
+
+
+
+- Ingrese el promedio
+  9.5
+- Ingrese el número de materias reprobadas
+  0
+- ¿Es de primer ciclo?
+  S
+
+- Evaluación:
+¿promedio >= 9.0 Y num_materias = 0? -> Verdadero
+
+- Salida en pantalla:
+* Beca de 100%, aprobada
